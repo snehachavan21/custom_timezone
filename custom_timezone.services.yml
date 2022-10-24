@@ -1,0 +1,4 @@
+services:
+  custom_timezone.current_time:
+    class: Drupal\custom_timezone\Services\CurrentTime
+    arguments: ['@date.formatter']

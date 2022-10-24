@@ -4,3 +4,17 @@
  * @file
  * Implements the main module function and generic helper functions.
  */
+
+ /**
+ * Implements hook_theme().
+ */
+function custom_timezone_theme() {
+    return [
+      'display_current_time_wrapper' => [
+        'template' => 'display-current-time',
+        'variables' => [
+          'data' => [],
+        ],
+      ],
+    ];
+  }
