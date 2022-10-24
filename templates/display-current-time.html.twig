@@ -1,0 +1,7 @@
+<div class="display-current-time-details">
+{% if data and data.current_time_details %}
+<h2>{{ data.current_time_details.time }}</h2>
+<p>{{ data.current_time_details.day }}, {{ data.current_time_details.date }}</p>
+<p>Time in {{ data.city }}, {{ data.country }}</p>
+{% endif %}
+</div>
